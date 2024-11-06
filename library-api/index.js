@@ -52,6 +52,12 @@ app.delete('/books/:id', (request, response) => {
 
 });
 
+// GET /users/:userId/books
+// Gets all books the specified user has checked out
+app.get('/users/:userId/books', (request, response) => {
+
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
